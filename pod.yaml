@@ -4,13 +4,13 @@ metadata:
   name: hello-pod
 spec:
   replicas: 2
-  template: jenkins-slave1
+  template: jenkins-slave2
     metadata:
-      labels: jenkins-slave1
+      labels: jenkins-slave2
         app: webservers
     spec:
       containers:
-        - name: jenkins-slave1
+        - name: jenkins-slave2
           image:https://cloud.docker.com/repository/docker/deepk/assign2:1.2
           ports:
             - name: http-port
